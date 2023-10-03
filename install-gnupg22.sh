@@ -4,23 +4,23 @@ mkdir -p /var/src/gnupg22 && cd /var/src/gnupg22
 gpg --list-keys
 gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 249B39D24F25E3B6 04376F3EE0856959 2071B08A33BD3F06 8A861B1C7EFD60D9
 
-wget -c https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.36.tar.gz &&
-wget -c https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.36.tar.gz.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.4.tar.gz &&
-wget -c https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.4.tar.gz.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.3.tar.bz2 &&
-wget -c https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.3.tar.bz2.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.3.5.tar.bz2 &&
-wget -c https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.3.5.tar.bz2.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2 &&
-wget -c https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2 &&
-wget -c https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/ntbtls/ntbtls-0.1.2.tar.bz2 &&
-wget -c https://www.gnupg.org/ftp/gcrypt/ntbtls/ntbtls-0.1.2.tar.bz2.sig &&
-wget -c https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.15.tar.bz2 &&
-wget -c https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.15.tar.bz2.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.36.tar.gz &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.36.tar.gz.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.4.tar.gz &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.4.tar.gz.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.3.tar.bz2 &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.3.tar.bz2.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.3.5.tar.bz2 &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.3.5.tar.bz2.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2 &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2 &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/ntbtls/ntbtls-0.1.2.tar.bz2 &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/ntbtls/ntbtls-0.1.2.tar.bz2.sig &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.15.tar.bz2 &&
+wget --no-check-certificate -c https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.15.tar.bz2.sig &&
 gpg --verify libgpg-error-1.36.tar.gz.sig && tar -xzf libgpg-error-1.36.tar.gz &&
 gpg --verify libgcrypt-1.8.4.tar.gz.sig && tar -xzf libgcrypt-1.8.4.tar.gz &&
 gpg --verify libassuan-2.5.3.tar.bz2.sig && tar -xjf libassuan-2.5.3.tar.bz2 &&
